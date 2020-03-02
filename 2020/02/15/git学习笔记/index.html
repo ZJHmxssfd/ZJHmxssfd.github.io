@@ -11,14 +11,14 @@
   <meta name="description" content="参考链接：廖雪峰老师的git教程     Git是目前世界上最先进的分布式版本控制系统（没有之一）   可以自动记录文件的每次改动，还可以让多个人协作编辑，不用一个人手动管理合并和传来传去。想要查看某次改动一目了然而不用肉眼逐行比对。这便是版本控制（软件）的妙处。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git学习笔记">
-<meta property="og:url" content="https:&#x2F;&#x2F;zjhmxssfd.github.io&#x2F;2020&#x2F;01&#x2F;15&#x2F;git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0&#x2F;index.html">
+<meta property="og:url" content="https:&#x2F;&#x2F;zjhmxssfd.github.io&#x2F;2020&#x2F;02&#x2F;15&#x2F;git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0&#x2F;index.html">
 <meta property="og:site_name" content="ZJH的博客">
 <meta property="og:description" content="参考链接：廖雪峰老师的git教程     Git是目前世界上最先进的分布式版本控制系统（没有之一）   可以自动记录文件的每次改动，还可以让多个人协作编辑，不用一个人手动管理合并和传来传去。想要查看某次改动一目了然而不用肉眼逐行比对。这便是版本控制（软件）的妙处。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https:&#x2F;&#x2F;zjhmxssfd.github.io&#x2F;2020&#x2F;01&#x2F;15&#x2F;git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0&#x2F;%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E4%BE%8B%E5%AD%90.JPG">
-<meta property="og:updated_time" content="2020-01-15T03:27:19.190Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;zjhmxssfd.github.io&#x2F;2020&#x2F;02&#x2F;15&#x2F;git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0&#x2F;%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E4%BE%8B%E5%AD%90.JPG">
+<meta property="og:updated_time" content="2020-03-02T15:36:35.632Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;zjhmxssfd.github.io&#x2F;2020&#x2F;01&#x2F;15&#x2F;git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0&#x2F;%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E4%BE%8B%E5%AD%90.JPG">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;zjhmxssfd.github.io&#x2F;2020&#x2F;02&#x2F;15&#x2F;git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0&#x2F;%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E4%BE%8B%E5%AD%90.JPG">
   
     <link rel="alternative" href="/atom.xml" title="ZJH的博客" type="application/atom+xml">
   
@@ -160,8 +160,8 @@
   
 
         
-        <a href="/2020/01/15/git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  	<time datetime="2020-01-15T03:07:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-15</time>
+        <a href="/2020/02/15/git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="archive-article-date">
+  	<time datetime="2020-02-15T07:07:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-15</time>
 </a>
         
       </header>
@@ -173,8 +173,35 @@
 <hr>
 <ol>
 <li>Git是目前世界上最先进的分布式版本控制系统（没有之一）  </li>
-<li>可以自动记录文件的每次改动，还可以让多个人协作编辑，不用一个人手动管理合并和传来传去。想要查看某次改动一目了然而不用肉眼逐行比对。这便是版本控制（软件）的妙处。<br><img src="/2020/01/15/git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E4%BE%8B%E5%AD%90.JPG" alt="图1"></li>
+<li>可以自动记录文件的每次改动，还可以让多个人协作编辑，不用一个人手动管理合并和传来传去。想要查看某次改动一目了然而不用肉眼逐行比对。这便是版本控制（软件）的妙处。<br><img src="/2020/02/15/git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E4%BE%8B%E5%AD%90.JPG" alt="图1">    <a id="more"></a>  </li>
+<li>linus真乃大神也！两周用C写了git。  </li>
+<li>分布式安全性比集中式要高；集中式（从中央服务器取出-工作-推给中央服务器）需要有一个中央服务器且必须联网才能工作，不在局域网且网速慢的话后果自行体会。分布式不需要中央服务器，电脑间互传即可。  </li>
+<li>创建版本库（/仓库repository）。  <ol>
+<li>创建空目录并进入。mkdir learngit &amp;&amp; cd learngit  </li>
+<li>git init。把目录变成Git可以管理的仓库（可以看到多了一个.git目录）  </li>
+<li>git add <file>。e.g.git add file1.txt (file2.txt)  </file></li>
+<li>git commit -m <message>。git commit -m “add 1(2) file(s)”   </message></li>
 </ol>
+</li>
+<li>修改，比较与提交  <blockquote>
+<ul>
+<li>修改文件后运行git status命令查看仓库当前状态；  </li>
+<li>git diff查看修改前后不同变化    </li>
+<li>git add readme.txt提交修改   </li>
+<li>git commit -m <message>  </message></li>
+</ul>
+</blockquote>
+</li>
+<li>版本回退  <blockquote>
+<ul>
+<li>git reset –hard commit_id  </li>
+<li>回退前，用git log可以查看提交历史，以便确定要回退到哪个版本  </li>
+<li>要重返未来版本，用git reflog查看命令历史，以便确定要回到哪个未来版本。</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<p>(未完待续咕咕咕)</p>
 
       
 
@@ -264,7 +291,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://zjhmxssfd.github.io/2020/01/15/git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://zjhmxssfd.github.io/2020/02/15/git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -279,7 +306,7 @@
 <nav id="article-nav">
   
   
-    <a href="/2020/01/15/%E7%B4%AB%E4%B9%A6(1)/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/01/29/%E7%B4%AB%E4%B9%A6(1)/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">紫书(1)</div>
       <i class="icon-circle-right"></i>
     </a>
