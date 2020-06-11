@@ -6,16 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://zjhmxssfd.github.io">
-  <title>django的pkg_resources.DistributionNotFound问题解决办法 | ZJH的博客</title>
+  <title>pragmaonce | ZJH的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="运行django-admin xx命令时，发现报出问题:Traceback (most recent call last):File “……\x.py”，line xxx, in yyyFile “……\y.py”, line xx, in yy…(划重点)pkg_resources.DistributionNotFound: The ‘pytz’ distribution was not fou">
+  <meta name="description" content="C&#x2F;C++有两种宏实现方式： 方式一： #ifndef __FILE_H__ #define __FILE_H__ ...... &#x2F;&#x2F; 声明、定义语句 #endif 方式二： #pragma once ....... &#x2F;&#x2F; 声明、定义语句  比较： （1） #ifndef 受C&#x2F;C++语言标准支持，保证同一文件不会被包含多次（内容上相同的文件或代码片段也可） 需注意头文件中的宏名冲突 编译时间相">
+<meta name="keywords" content="随笔">
 <meta property="og:type" content="article">
-<meta property="og:title" content="django的pkg_resources.DistributionNotFound问题解决办法">
-<meta property="og:url" content="https:&#x2F;&#x2F;zjhmxssfd.github.io&#x2F;2020&#x2F;03&#x2F;14&#x2F;django%E7%9A%84pkg-resources-DistributionNotFound%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95&#x2F;index.html">
+<meta property="og:title" content="pragmaonce">
+<meta property="og:url" content="https:&#x2F;&#x2F;zjhmxssfd.github.io&#x2F;2020&#x2F;06&#x2F;11&#x2F;pragmaonce&#x2F;index.html">
 <meta property="og:site_name" content="ZJH的博客">
-<meta property="og:description" content="运行django-admin xx命令时，发现报出问题:Traceback (most recent call last):File “……\x.py”，line xxx, in yyyFile “……\y.py”, line xx, in yy…(划重点)pkg_resources.DistributionNotFound: The ‘pytz’ distribution was not fou">
+<meta property="og:description" content="C&#x2F;C++有两种宏实现方式： 方式一： #ifndef __FILE_H__ #define __FILE_H__ ...... &#x2F;&#x2F; 声明、定义语句 #endif 方式二： #pragma once ....... &#x2F;&#x2F; 声明、定义语句  比较： （1） #ifndef 受C&#x2F;C++语言标准支持，保证同一文件不会被包含多次（内容上相同的文件或代码片段也可） 需注意头文件中的宏名冲突 编译时间相">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-03-14T15:06:00.794Z">
+<meta property="og:updated_time" content="2020-06-11T10:40:26.182Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="ZJH的博客" type="application/atom+xml">
@@ -146,28 +147,51 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-django的pkg-resources-DistributionNotFound问题解决办法" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-pragmaonce" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      django的pkg_resources.DistributionNotFound问题解决办法
+      pragmaonce
     </h1>
   
 
         
-        <a href="/2020/03/14/django%E7%9A%84pkg-resources-DistributionNotFound%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/" class="archive-article-date">
-  	<time datetime="2020-03-14T14:53:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-14</time>
+        <a href="/2020/06/11/pragmaonce/" class="archive-article-date">
+  	<time datetime="2020-06-11T10:13:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-11</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>运行django-admin xx命令时，发现报出问题:<br>Traceback (most recent call last):<br>File “……\x.py”，line xxx, in yyy<br>File “……\y.py”, line xx, in yy<br>…<br>(划重点)<br>pkg_resources.DistributionNotFound: The ‘pytz’ distribution was not found and is required by Django</p>
-<p>解决办法:<br>pip3 install pytz(缺’xx’就安装xx)</p>
+        <ol>
+<li><p>C/C++有两种宏实现方式：</p>
+<p>方式一：</p>
+<p><code>#ifndef __FILE_H__</code></p>
+<p><code>#define __FILE_H__</code></p>
+<p><code>...... // 声明、定义语句</code></p>
+<p><code>#endif</code></p>
+<p>方式二：</p>
+<p><code>#pragma once</code></p>
+<p><code>....... // 声明、定义语句</code></p>
+</li>
+<li><p>比较：</p>
+<p>（1） #ifndef</p>
+<p>受C/C++语言标准支持，保证同一文件不会被包含多次（内容上相同的文件或代码片段也可）</p>
+<p>需注意头文件中的宏名冲突</p>
+<p>编译时间相对较长</p>
+<p>移植性佳</p>
+<p>（2） #pragma once</p>
+<p>由编译器提供保证（物理上的，而非内容相同的）同一文件不会被多次包含多次</p>
+<p>无法对头文件中的一段代码作pragma once声明，只能针对文件</p>
+<p>不必考虑宏名冲突</p>
+<p>编译相对前者要快一些，尤其是大型项目</p>
+<p>不支持跨平台</p>
+</li>
+</ol>
 
       
 
@@ -207,6 +231,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -257,7 +292,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://zjhmxssfd.github.io/2020/03/14/django%E7%9A%84pkg-resources-DistributionNotFound%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://zjhmxssfd.github.io/2020/06/11/pragmaonce/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -271,18 +306,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/06/11/pragmaonce/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          pragmaonce
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/03/10/HTML%E5%85%A5%E9%97%A8/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">HTML入门</div>
+    <a href="/2020/03/14/django%E7%9A%84pkg-resources-DistributionNotFound%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">django的pkg_resources.DistributionNotFound问题解决办法</div>
       <i class="icon-circle-right"></i>
     </a>
   
